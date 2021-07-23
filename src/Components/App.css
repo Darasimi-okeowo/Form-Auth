@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form{
+    border: 1px solid grey; 
+}
+
+.form-items{
+display: flex;
+flex-direction: column;
+width: 20rem;
+height: 7rem;
+padding: 2rem;
+}
+
+label{
+    margin-bottom: .6rem;
+}
+
+input{
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: .2rem;
+}
+
+button{
+    border: 1px solid transparent;
+    padding: 1rem;
+    background-color: blue;
+    border-radius: .2rem;
+    cursor: pointer;
+    color: white;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 200;
+}
