@@ -1,12 +1,16 @@
 import React from 'react';
+import { AuthProvider } from '../context/AuthContext';
 import './App.css';
 import Signup from './Signup'
 
 function App() {
   return (
-    <div className="App">
+    <AuthProvider>
+<div className="App">
       <Signup />
     </div>
+    </AuthProvider>
+    
   );
 }
 
