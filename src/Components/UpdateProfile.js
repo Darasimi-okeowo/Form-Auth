@@ -40,9 +40,9 @@ const UpdateProfile = () => {
     <div className="main">
       <form className="form" onSubmit={handleSubmit}>
         <div className="form-items">
-          <h4>Update Profile</h4>
+          <h4 className='name'>Update Profile</h4>
         </div>
-        {error && <hi>{error}</hi>}
+        {error && <hi className='error'>{error}</hi>}
         <div className="form-items">
           <label>Email</label>
           <input
@@ -74,7 +74,7 @@ const UpdateProfile = () => {
           </button>
         </div>
       </form>
-      <Link to="/">Cancel</Link>
+      <p className="par"><Link to="/" style={{textDecoration: 'none'}}>Cancel</Link></p>
     </div>
   );
 };

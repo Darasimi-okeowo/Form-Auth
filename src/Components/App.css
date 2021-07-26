@@ -8,9 +8,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: violet;
 }
 .form{
-    border: 1px solid grey; 
+    /* border: 1px solid grey;  */
 }
 
 .form-items{
@@ -23,27 +24,62 @@ padding: 2rem;
 
 label{
     margin-bottom: .6rem;
+    font-size: large;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.error{
+    font-size: large;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.name{
+    font-size: large;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
 }
 
 input{
     padding: .5rem;
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: .2rem;
 }
 
 button{
     border: 1px solid transparent;
     padding: 1rem;
-    background-color: blue;
+    background-color: rgb(0, 242, 255);
     border-radius: .2rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     cursor: pointer;
-    color: white;
 }
 
-h4{
+.forgot{
+    border: 1px solid transparent;
+    background-color: rgb(0, 242, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    font-weight: 200;
+    font-size: large;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.par{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 100;
+    text-decoration: none;
 }

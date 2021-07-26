@@ -29,9 +29,9 @@ const Login = () => {
       <form className="form" on onSubmit={handleSubmit}>
         
         <div className="form-items">
-          <h4>Log In</h4>
+          <h4 className='name'>Log In</h4>
         </div>
-        {error && <hi>{error}</hi>}
+        {error && <hi className='error'>{error}</hi>}
         <div className="form-items">
           <label>Email</label>
           <input type="email" ref={emailRef} required/>
@@ -45,10 +45,10 @@ const Login = () => {
           <button disabled={loading} type='submit'>Log In</button>
         </div>
         <div className="form-items">
-        <Link to='/forgot-password'>Forgot Password</Link>
+        <Link to='/forgot-password' className='forgot'>Forgot Password</Link>
         </div>
       </form>
-      <p>Need an account?<Link to='/signup'>Sign Up</Link></p>
+      <p className="par">Need an account?<Link to='/signup' style={{textDecoration: 'none'}}>Sign Up</Link></p>
     </div>
   );
 };

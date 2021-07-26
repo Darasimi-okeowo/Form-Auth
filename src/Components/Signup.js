@@ -32,9 +32,9 @@ const Signup = () => {
       <form className="form"  onSubmit={handleSubmit}>
         
         <div className="form-items">
-          <h4>Sign Up</h4>
+          <h4 className='name'>Sign Up</h4>
         </div>
-        {error && <hi>{error}</hi>}
+        {error && <hi className='error'>{error}</hi>}
         <div className="form-items">
           <label>Email</label>
           <input type="email" ref={emailRef} required/>
@@ -51,7 +51,7 @@ const Signup = () => {
           <button disabled={loading} type='submit'>Sign Up</button>
         </div>
       </form>
-      <p>Already have an account?<Link to='/login'>Log In</Link></p>
+      <p className="par">Already have an account?<Link to='/login' style={{textDecoration: 'none'}}>Log In</Link></p>
     </div>
   );
 };

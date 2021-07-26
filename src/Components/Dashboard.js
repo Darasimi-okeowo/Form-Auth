@@ -23,16 +23,16 @@ history.pushState('/login')
         <form className="form" >
           
           <div className="form-items">
-            <h4>Profile</h4>
+            <h4 className='name'>Profile</h4>
           </div>
           
-          {error && <hi>{error}</hi>}
-          <strong>Email:</strong>{currentUser.email}
+          {error && <hi className='error'>{error}</hi>}
+         <p className="par">Email:{currentUser.email}</p>
           <div className="form-items">
-            <button><Link to='/update-profile'>Update Profile</Link></button>
+          <p className="par"><button><Link to='/update-profile' style={{textDecoration: 'none'}}>Update Profile</Link></button></p> 
           </div>
         </form>
-        <button onClick={handleLogOut}><Link to='/'>Log Out</Link></button>
+        <p className="par"><button onClick={handleLogOut}><Link to='/' style={{textDecoration: 'none'}}>Log Out</Link></button></p>
       </div>
     )
 }

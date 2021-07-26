@@ -29,9 +29,9 @@ const ForgotPassword = () => {
       <form className="form" on onSubmit={handleSubmit}>
         
         <div className="form-items">
-          <h4> Password Reset </h4>
+          <h4 className='name'> Password Reset </h4>
         </div>
-        {error && <hi>{error}</hi>}
+        {error && <hi className='error'>{error}</hi>}
         <div className="form-items">
           <label>Email</label>
           <input type="email" ref={emailRef} required/>
@@ -41,10 +41,10 @@ const ForgotPassword = () => {
           <button disabled={loading} type='submit'>Reset Password</button>
         </div>
         <div className="form-items">
-        <Link to='/login'>Log In</Link>
+        <Link to='/login' className='forgot'>Log In</Link>
         </div>
       </form>
-      <p>Need an account?<Link to='/signup'>Sign Up</Link></p>
+      <p className="par">Need an account?<Link to='/signup' style={{textDecoration: 'none'}}>Sign Up</Link></p>
     </div>
   );
 };
